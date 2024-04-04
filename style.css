@@ -9,6 +9,17 @@ a{
    color: black;
 }
 
+a:hover{
+   opacity: 0.7;
+   transition: 0.5sec;
+   border: transparent;
+}
+
+header{
+   position: sticky;
+   top:0%;
+}
+
 .nav-bar{
    height:3.5rem;
    background-color:aquamarine;
@@ -17,8 +28,8 @@ a{
    justify-content: space-evenly;
    width: auto;
    position:sticky;
-   top: 4rem;
-   color:black;
+   top:0%
+  
    
 }
 
@@ -95,8 +106,6 @@ a{
    display: flex;
    justify-content:space-between;
    align-items: center;
-   position:sticky;
-   top:0%;
 }
 
 .website-logo{
@@ -186,6 +195,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,121,1) 100%
    color:rgba(128, 128, 128, 1);
    margin:5px;
 }
+
 
 
 .slide-bar{
@@ -332,28 +342,6 @@ overflow-x: auto;
    
 }
 
-.menu-icon{
-   z-index: 1001;
-   font-size:30px;
-   display:none;
-   
-}
-
-.prev-btn{
-   height:40px;
-   width: 40px;
-   color:white;
-   background-color: black;
-   border-radius: 50%;
-   border:none;
-   outline: none;
-   position:absolute;
-   left:-5px;
-top:140%;
-   transform: translateY(-50%);
-   
-}
-
 .next-btn{
    height:40px;
    width: 40px;
@@ -373,6 +361,50 @@ top:140%;
    opacity: 0.2;
 }
 
-.prev-btn:hover{
-   opacity: 0.2;
+
+i{
+   margin-right:5px;
+}
+
+.check-btn{
+   font-size: 30px;
+   color:white;
+   list-style:20px;
+   cursor: pointer;
+   display: none;
+}
+
+#check{
+   display: none;
+}
+
+@media (max-width:1050px){
+ .nav-bar a i{
+   font-size: small;
+   
+ }
+}
+
+@media (max-width:1000px){
+   .check-btn{
+      display: block;
+   }
+
+   .nav-bar{
+      position:relative;
+      width:50%;
+      height:50vh;
+      right:0;
+      text-align: center;
+      display: block;
+      transition:all 0.5sec;
+      line-height:40px;
+      padding:10px;
+      
+
+   }
+
+   .check-btn{
+      line-height: 30px;
+   }
 }
