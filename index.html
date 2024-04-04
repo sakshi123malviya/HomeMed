@@ -6,41 +6,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css"/>
+    <script src="app.js" defer></script>
 
 </head>
 <body>
     <!--main-image of website-->
-    <div class="main-pic">
+   <!--<div class="main-pic"> -->
 
         <!--first navbar of website-->
 <div class="first-nav">
-    <div class="website-name">Website name</div> <!--change it by our website name-->
-   
+    <div class="website-logo"></div> <!--change it by our website name-->
+    <div class="website-name"></div>
         <!--login and signin buttons-->
     <div class="login-signup">
-        <button class="login"><a href="##">login</a></button>
-        <button class="sign-up"><a href="##">sign up</a></button>
+        <button type="button" class="login"><a href="##">login</a></button>
+        <button type="button" class="sign-up"><a href="##">sign up</a></button>
     </div>
 </div>  <!--first navbar ends here-->
-
+<div class="main-pic"> 
     <!--second navbar start form here-->
     <header>
-<div class="nav-bar">
-    <!--logo of our website-->
-    <div class="nav-logo hover">
-        <div class="logo"></div>
-        </div>
+    
+<div class="nav-bar"> <!--logo of our website-->
+
     <!--searchbar of navbar -->
         <div class="nav-search">
             <input  class="nav-input" type="search" placeholder="search-remedy">
             <div class="search-icon"><a href="@@"><i class="fa-solid fa-magnifying-glass"></i></a></div>
         </div>
         <!--seach-bar end here-->
-         <div class="home"><a href="##">Home</a></div> <!--home of nav-bar-->
+         <div class="home"><a href="##"><i class="fa-solid fa-house"></i>Home</a></div> <!--home of nav-bar-->
         <div class="nav-blog"><a href="##">Blog</a></div> <!--blog-section of nav-bar-->
         <div class="nav-about"><a href="##">About us</a></div> <!--about-section of nav-bar-->
         <div class="nav-contact"><a href="##">Contact us</a></div> <!--contact-section of nav-bar-->
         <div class="blank-div"><a href="##">blank</a></div> <!--blank-section of nav-bar-->
+
     </div>
 </header>
 <!--nav-bar ends here-->
@@ -51,31 +51,29 @@
         <p class="slogan-line1">From Home to Heal</p> <!--slogan's 1st line-->
         <p class="slogan-line2">Homemade Remedies, Nature's Appeal</p><!--slogan's 1st line-->
     </div>
-    <button class="main-button"> <a href="##">Create Remedy</a></button>
 </div>
+
+<div class="main-btn">
+    <button type="button" class="main-button"> <a href="##">Create Remedy</a></button>
 </div>
 <!--Create remedy's button's code end-->
      
 <!--main body start from here-->
 <main>
-<!--heading-->   
- <div class="know-about-disease">
-        <h1 class="treatment">common Diseases that are easily caused by Home Remedies </h1><!--if you want to change so change here-->
-    </div>
-    <!--heading end-->
-
+    <div class="main-slide">
     <!--slide-bar-start-->
     <div class="slide-bar">
+       
         <!--fist disease-->
-        <div class="fist-disease">
-         <div class="headache"></div>
+        <div class="fist-disease slide">
+         <div class="headache "></div>
             <p class="disease-para"> Apply a cold compress to the forehead or temples.
                 Massage the scalp and neck gently to relieve tension.</p>
          </div>
          <!--fist disease end-->
 
          <!--second disease-->
-        <div class="second-disease">
+        <div class="second-disease slide">
         <div class="common-cold"></div>
             <p class="disease-para">Drink plenty of fluids, such as water, herbal teas, or clear broths.
                 Inhale steam with added eucalyptus or peppermint oil.</p>
@@ -83,7 +81,7 @@
         <!--second disease end-->
 
         <!--third disease-->
-        <div class="third-disease">
+        <div class="third-disease slide">
         <div class="sore-throat"></div>
             <p class="disease-para">Gargle with warm salt water.
                 Drink honey and lemon tea.
@@ -92,7 +90,7 @@
         <!--third disease end-->
 
         <!--forth disease-->
-        <div class="forth-disease">
+        <div class="forth-disease slide">
         <div class="acne"></div>
             <p class="disease-para">Cleanse the skin with a gentle cleanser twice a day.
                 Apply a dab of tea tree oil or diluted apple cider vinegar to acne spots.</p>
@@ -100,7 +98,7 @@
         <!--forth disease end-->
 
         <!--fifth disease-->
-        <div class="fifth-disease">
+        <div class="fifth-disease slide">
         <div class="Insomnia"></div>
             <p class="disease-para">Create a relaxing bedtime routine, including activities like reading or taking a warm bath.
                 Drink a cup of chamomile tea before bedtime.</p>
@@ -108,13 +106,15 @@
         <!--fifth disease end-->
 
         <!--sixth disease-->
-        <div class="sixth-disease">
+        <div class="sixth-disease slide">
         <div class="Nausea"></div>
             <p class="disease-para">Sip on ginger tea or chew on ginger candies.
                 Drink clear liquids like water, herbal teas, or ginger ale.</p>
         </div>
         <!--sixth disease end-->
     </div>
+    <button type="button" aria-label="slide" class="next-btn slide-btn " ><i class="fa-solid fa-arrow-right"></i></button>
+</div>
 </main>
 <!--slidebar finish-->
    
@@ -136,6 +136,5 @@
     </div>
  </footer>
  
-
 </body>
 </html>

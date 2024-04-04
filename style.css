@@ -10,60 +10,42 @@ a{
 }
 
 .nav-bar{
-   margin-top: 20px;
-   margin-left: 35px;
-   height:60px;
-   background-color: blanchedalmond;
-   border:1px solid black;
+   height:3.5rem;
+   background-color:aquamarine;
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   width: 95%;
-   opacity: 0.8;
-   border-radius: 10px;
-}
-
-.nav-logo{
-   height:90%;
-   width: 50px; 
-}
-
-.logo{
-   background-image: url(10422708.png);
-   height: 50px;
-   width:100%;
-   background-size: contain;
-   background-repeat: no-repeat;
-
-}
-
-hover:hover{
-   font-weight: 700;
+   justify-content: space-evenly;
+   width: auto;
+   position:sticky;
+   top: 4rem;
+   color:black;
+   
 }
 
 .main-pic{
    width:100%;
-   height:700px;
-   background-image: url(main-image4.jpg);
+   height:100vh;
+   background-image: url(mi.jpg);
    background-size:cover;
    background-repeat: no-repeat;
+   
 }
 
 .home{
-   font-size:larger;
+   font-size:x-large;
+   font-weight: 500;
   }
 
 .nav-search{
-   height:50px;
-   width:500px;
+   height:2rem;
+   width:30rem;
    display: flex;
-   justify-content: center;
    align-items: center;
 }
 
 .nav-input{
    height:40px;
-   width:400px;
+   width:500px;
    border-radius: 15px 0 0 15px;
    text-align:center;
    font-size: medium;
@@ -84,55 +66,85 @@ hover:hover{
 }
 
 .nav-blog{
-   font-size: larger;
+   font-size:x-large;
+   font-weight: 500;
 }
 
 .nav-about{
-   font-size: larger;
+   font-size:x-large;
+   font-weight: 500;
 }
 
 .nav-contact{
-   font-size: larger;
+   font-size: x-large;
+   font-weight: 500;
 }
 
 .blank-div{
-   font-size: larger;
+   font-size:x-large;
+   font-weight: 500;
    margin-right: 10px;
 }
 
 .first-nav{
    width:100%;
-   height:65px;
-   background-color:rgb(16, 105, 16);
+   height:3rem;
+   background-color:#4F6F52;
    color:white;
    font-weight: 900;
    display: flex;
    justify-content:space-between;
    align-items: center;
+   position:sticky;
+   top:0%;
+}
+
+.website-logo{
+   margin-left:12px;
+   background-image: url(iconpng.png);
+   height:50px;
+   width:5rem;
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 
 .website-name{
-   font-size: xx-large;
-   margin-left:12px;
-   font-weight: bolder;
+   background-image: url(textpng.png);
+   height:50px;
+   width:10rem;
+   background-size: contain;
+   background-repeat: no-repeat;
+ margin-left:-930px;
 }
 
 .login-signup{
-   margin-right: 12px;
+   margin-right:1.5rem;
    
 }
 
 .login{
-   height:30px;
-   width: 55px;
-   border-radius: 5px;
+   height:35px;
+   width: 80px;
+   border-radius: 20px;
+   font-size:large;
+   border:none;
+   margin-right: 0.75rem;
+   background-color: #D2E3C8;
    
 }
 
+.login:hover{
+   opacity: 0.8;
+}
+
 .sign-up{
-   height:30px;
-   width: 55px;
-   border-radius: 5px;
+   height:35px;
+   width: 80px;
+   border-radius: 20px;
+   font-size:large;
+   border:none;
+   background-color: #D2E3C8;
+
 }
 
 .create-remedy{
@@ -144,15 +156,18 @@ hover:hover{
 }
 
 .main-button{
-   height:60px;
-   width: 300px;
-   background-color: rgb(46, 204, 46);
-   font-size: x-large;
+   height:75px;
+   width: 500px;
+   /*background-color: rgb(46, 204, 46);*/
+   font-size: xx-large;
    font-weight: 450;
-   border-radius: 30px;
-   color:beige;
+   border-radius: 40px;
+   color:beige !important;
    border:1px solid wheat;
-   margin-top:40px;
+   /*margin-top:480px;*/
+   background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,121,1) 100%);
+   margin-left: 18rem;
 }
 
 .slogan{
@@ -174,16 +189,29 @@ hover:hover{
 
 
 .slide-bar{
-   height:800px;
+   height:400px;
    width:100%;
-   display:flex;
-   justify-content: space-between;
-   flex-wrap:wrap;
+   display: grid;
+   max-width: 1900px;
+   grid-template-columns: repeat(6,1fr);
+   gap: 20px;
    /*align-items:center;*/
-  
-   
+   position:relative;
+overflow-x: auto;
+   /*margin-top: 400px;*/
+   scrollbar-width: none;
+   margin-bottom: 10px;
 
 }
+
+.slide{
+   border:1px solid black;
+}
+
+.slide-bar ::-webkit-scrollbar{
+   display :none
+}
+
  .headache{
    margin-top:10px;
    margin-left:40px;
@@ -300,3 +328,51 @@ hover:hover{
    font-size: x-large;
 }
 
+.login :hover{
+   
+}
+
+.menu-icon{
+   z-index: 1001;
+   font-size:30px;
+   display:none;
+   
+}
+
+.prev-btn{
+   height:40px;
+   width: 40px;
+   color:white;
+   background-color: black;
+   border-radius: 50%;
+   border:none;
+   outline: none;
+   position:absolute;
+   left:-5px;
+top:140%;
+   transform: translateY(-50%);
+   
+}
+
+.next-btn{
+   height:40px;
+   width: 40px;
+   color:white;
+   background-color: black;
+   border-radius: 50%;
+   border:none;
+   outline:none;
+   position: absolute;
+right: -5px;
+top:140%;
+   /*transform: translateY(-50%);*/
+   
+}
+
+.next-btn:hover{
+   opacity: 0.2;
+}
+
+.prev-btn:hover{
+   opacity: 0.2;
+}
