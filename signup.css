@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.login-form{
+    display: flex;
+    align-items: center;
+    background: rgb(105,195,117);
+background: linear-gradient(0deg, rgba(105,195,117,1) 57%, rgba(1,11,0,0.21612394957983194) 100%);
+    height:100vh;
+    width:100%;
+    flex-direction: column;
+}
+
+.website-name-login{
+    background-image: url(textpng.png);
+    height:5rem;
+    width:15rem;
+    margin-top:1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.website-logo-login{
+background-image: url(iconpng.png);
+height:5rem;
+width:5rem;
+margin-left: 3rem;
+background-size: contain;
+background-repeat: no-repeat;
+
+}
+
+.website-full-logo{
+    margin-top:1rem;
+    display: flex;
+    margin-right:2rem;
+}
+
+.login-form-start{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding:2rem;
+    margin-top:1rem;
+    border-radius: 2rem;
+    width:40%;
+    height: 75%;
+    
+}
+.login-btn{
+    height:2.5rem;
+    width:100%;
+    border:1px solid rgb(255, 255, 255,0.2);
+    background-color:darkolivegreen;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.google-btn{
+    height:4rem;
+    width:100%;
+    border:none;
+    margin-top:1rem;
+    border-radius: 0.5rem;
+}
+
+
+@media (max-width:437px){
+    .website-name-login{
+        width: 10rem;
+        height: 3rem;
+        margin-top:0.5rem;
+    }
+
+    .website-logo-login{
+        width:3rem;
+        height: 3rem;
+    }
+
+    .login-form-start{
+        padding:1rem;
+        margin-top:1rem;
+        border:none;
+    }
+}
+
+@media (max-width:870px){
+    .form-label{
+        font-size: small;
+    }
+
+}
+
+@media (max-width){
+    .form-label{
+        font-size: xx-small;
+    }
+}
