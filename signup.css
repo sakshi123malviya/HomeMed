@@ -86,14 +86,14 @@ background-repeat: no-repeat;
     }
 }
 
-@media (max-width:870px){
+@media (max-width:840px){
     .form-label{
         font-size: small;
     }
 
 }
 
-@media (max-width){
+@media (max-width:740px){
     .form-label{
         font-size: xx-small;
     }

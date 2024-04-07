@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.blog-main{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.adusa-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(Adusa.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem;
+}
+
+h4 {
+    display: inline;
+    color: rgb(61, 60, 60);
+    text-decoration: underline;
+}
+h5{
+    display:inline;
+    color:rgb(71, 69, 69);
+   
+}
+
+.one{
+    display: flex;
+    
+}
+
+.one-para{
+    font-size:large;
+    font-weight:400;
+    /*margin:6rem;*/
+    margin-top:3rem;
+    width:70%;
+   margin-bottom: 3rem;
+}
+
+.blog-heading{
+    width: auto;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.babool-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(babool.webp);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem;
+}
+
+.Alovera-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(Aloe-Vera.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem;
+}
+
+.pineapple-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(pineapple.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem
+}
+
+.ginger-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(ginger.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem
+}
+
+.garlic-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(garlic.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem
+}
+
+.turmeric-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(turmeric.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem
+}
+
+.tulsi-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(tulsi.webp);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem
+}
+
+.varun-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(Varun.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem
+}
+
+.mulethi-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(mulethi.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem
+}
+
+.dalchini-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(dalchini.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem
+}
+
+.amla-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(amla.webp);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem
+}
+
+.mv-img{
+    width:15rem;
+    height:15rem;
+    background-image: url(mv.jpg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem   
+}
