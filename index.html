@@ -12,21 +12,23 @@
 <body>
         <!--first navbar of website-->
 <div class="first-nav">
-    <div class="website-logo"></div> <!--change it by our website name-->
-    <div class="website-name"></div>
+    <div class="website-name-logo">
+        <div class="website-logo"></div> <!--change it by our website name-->
+        <div class="website-name"></div>
+    </div>
         <!--login and signin buttons-->
     <div class="login-signup">
         <button type="button" class="login"><a href="##">login</a></button>
         <button type="button" class="sign-up"><a href="##">sign up</a></button>
     </div>
 </div>  <!--first navbar ends here-->
-<div class="main-pic"> 
+<!--<div class="main-pic"> -->
     <!--second navbar start form here-->
     <header>
     
-<div class="nav-bar"> 
+   <!-- <div class="nav-bar">-->
 
-        <div class="nav-search">
+       <!-- <div class="nav-search">
             <input  class="nav-input" type="search" placeholder="search-remedy">
             <div class="search-icon"><a href="@@"><i class="fa-solid fa-magnifying-glass"></i></a></div>
             </div>
@@ -35,19 +37,48 @@
         <div class="nav-blog"><a href="##"><i class="fa-solid fa-book"></i>Blog</a></div> 
         <div class="nav-about"><a href="##"><i class="fa-solid fa-address-card"></i>About us</a></div> 
         <div class="nav-contact"><a href="##"><i class="fa-solid fa-phone"></i>Contact us</a></div> 
-        <div class="blank-div"><a href="##"><i class="fa-solid fa-question"></i>Help</a></div> 
+        <div class="blank-div"><a href="##"><i class="fa-solid fa-question"></i>Help</a></div> -->
+       
+        <div class="nav-bar">
+        <nav>
+            <div class="slidebar" style="display: none;">
+            <ul >
+                <li class="menu-btn" onclick=hideSlidebar()><a><i class="fa-solid fa-x"></i></a></li>
+                
+                <li  class="home"><a href="##"><i class="fa-solid fa-house"></i>Home</a></li> 
+                <li class="nav-blog"><a href="##"><i class="fa-solid fa-book"></i>Blog</a></li>
+                <li  class="nav-about"><a href="##"><i class="fa-solid fa-address-card"></i>About us</a></li>
+                <li class="nav-contact"><a href="##"><i class="fa-solid fa-phone"></i>Contact us</a></li>
+                <li class="blank-div"><a href="##"><i class="fa-solid fa-question"></i>Help</a></li>
+            </ul>
+            </div>
 
-        <!--additional-->
-        <input type="checkbox" id="check" placeholder="f"/>
-        <label for="check" class="check-btn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-
+            <ul>
+                <li class="hide nav-search">
+                    <input  class="nav-input" type="search" placeholder="search-remedy">
+                <div class="search-icon"><a href="@@"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                </li>
+                <li class="home hide"><a href="##"><i class="fa-solid fa-house"></i>Home</a></li> 
+                <li class="nav-blog hide"><a href="##"><i class="fa-solid fa-book"></i>Blog</a></li>
+                <li class="nav-about hide"><a href="##"><i class="fa-solid fa-address-card"></i>About us</a></li>
+                <li class="nav-contact hide"><a href="##"><i class="fa-solid fa-phone"></i>Contact us</a></li>
+                <li class="blank-div hide"><a href="##"><i class="fa-solid fa-question"></i>Help</a></li>
+                <li class="menu-btn" onclick=showSlidebar()><a><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    
     </div>
 </header>
 <!--nav-bar ends here-->
 
+
+<!--new navbar-->
+
+
+
 <!--our main button's code-->
+
+<div class="layout">
 <div class="create-remedy"><!--main div of create remedy-->
     <div class="slogan">
         <p class="slogan-line1">From Home to Heal</p> <!--slogan's 1st line-->
@@ -56,6 +87,9 @@
     <div class="main-btn1">
         <button type="button" class="main-button1"> <a href="##">show Remedy</a></button>
     </div>
+</div>
+
+<div class="main-pic"></div>
 </div>
 
 <div class="main-btn2">
@@ -140,6 +174,18 @@
         </div>
     </div>
  </footer>
+        <!--java script code for responsive navbar-->
+ <script>
+    function showSlidebar(){
+        const slidebar= document.querySelector('.slidebar')
+        slidebar.style.display = 'flex'
+    }
+
+    function hideSlidebar(){
+        const slidebar= document.querySelector('.slidebar')
+        slidebar.style.display = 'none'
+    }
+</script>
  
 </body>
 </html>

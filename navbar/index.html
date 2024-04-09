@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"  rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <ul class="slidebar">
+            <li class="menu-btn" onclick=hideSlidebar()><a><i class="fa-solid fa-x"></i></a></li>
+            <li class="nav-search">
+                <input  class="nav-input" type="search" placeholder="search-remedy">
+            <div class="search-icon"><a href="@@"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            </li>
+            <li ><a href="##"><i class="fa-solid fa-house"></i>Home</a></li> 
+            <li ><a href="##"><i class="fa-solid fa-book"></i>Blog</a></li>
+            <li ><a href="##"><i class="fa-solid fa-address-card"></i>About us</a></li>
+            <li ><a href="##"><i class="fa-solid fa-phone"></i>Contact us</a></li>
+            <li ><a href="##"><i class="fa-solid fa-question"></i>Help</a></li>
+        </ul>
+
+
+
+
+        <ul>
+            <li class="hide">
+                <input  class="nav-input" type="search" placeholder="search-remedy">
+            <div class="search-icon"><a href="@@"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            </div>
+            </li>
+            <li class="hide"><a href="##"><i class="fa-solid fa-house"></i>Home</a></li> 
+            <li class="hide"><a href="##"><i class="fa-solid fa-book"></i>Blog</a></li>
+            <li class="hide"><a href="##"><i class="fa-solid fa-address-card"></i>About us</a></li>
+            <li class="hide"><a href="##"><i class="fa-solid fa-phone"></i>Contact us</a></li>
+            <li class="hide"><a href="##"><i class="fa-solid fa-question"></i>Help</a></li>
+            <li class="menu-btn" onclick=showSlidebar()><a><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSlidebar(){
+            const slidebar= document.querySelector('.slidebar')
+            slidebar.style.display = 'flex'
+        }
+
+        function hideSlidebar(){
+            const slidebar= document.querySelector('.slidebar')
+            slidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+</html>
